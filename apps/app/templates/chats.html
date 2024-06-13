@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+{% block title %}PINEAPPLE Chats{% endblock %}
+{% block content %}
+<div class="moveLink">
+    <div class="menu">
+        <p style="margin-top: 50px;">
+            <a href="/friends" class="a1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-person-fill " viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </a>
+        </p>
+        <p><a href="/chats" style="color: #ffc107;" class="a1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor"
+                    class="bi bi-chat-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                </svg>
+            </a></p>
+    </div>
+
+    <div class="head">
+        <p><b style="font-size: 30px; margin-left: 20px; color: #ffc107;">채팅</b></p>
+        <div style="margin-left: auto;">
+            <img src="../static/app.png" style="width: 100px; height: 100px;"><b
+                style="font-size: 30px; color: #ffc107">PINEAPPLE
+                TALK</b>
+        </div>
+        <div class="btnGroup">
+            <button type="button" class="btn btn-outline-warning headBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-outline-warning headBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>
+            </button>
+
+        </div>
+    </div>
+    <a class="friend" href="/chat">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구1</b>
+            </span>
+            <span style="position: absolute; right: 16px; color: gray;">오후 17:57</span><br />
+            <span style="color: gray;">
+                먼저 퇴근한다
+            </span>
+        </div>
+
+    </a>
+    <a class="friend2" href="/chat">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구2</b>
+            </span>
+            <span style="position: absolute; right: 16px; color: gray;">오후 16:41</span><br />
+            <span style="color: gray;">
+                하와이안 피자 맛없음
+            </span>
+        </div>
+    </a>
+    <a class="friend3" href="/chat">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구3</b>
+            </span>
+            <span style="position: absolute; right: 16px; color: gray;">오후 15:13</span><br />
+            <span style="color: gray;">
+                안녕 나는 친구 3
+            </span>
+        </div>
+    </a>
+    <a class="friend4" href="/chat">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+
+        <div>
+            <span>
+                <b>파인애플 친구4</b>
+            </span>
+            <span style="position: absolute; right: 16px; color: gray;">오후 14:23</span><br />
+            <span style="color: gray;">
+                사진을 보냈습니다.
+            </span>
+        </div>
+    </a>
+
+</div>
+
+<style>
+    .moveLink {
+        display: flex;
+        height: 100vh;
+    }
+
+    .menu {
+        text-align: center;
+        padding-top: 80px;
+
+        min-width: 80px;
+        height: 100%;
+        background-color: green;
+    }
+
+    .head {
+        height: 10%;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+
+    }
+
+    .headBtn {
+        border-radius: 100%;
+        border: none;
+        width: 64px;
+        height: 64px;
+    }
+
+    .btnGroup {
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .a1 {
+        color: #b9a15a;
+    }
+
+    .a1:hover {
+        color: #d0a72a;
+    }
+    a{
+        color: black;
+    }
+
+    .friend {
+        margin-top: 95px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+
+    .friend2 {
+        margin-top: 195px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .friend3 {
+        margin-top: 295px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend4 {
+        margin-top: 395px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend5 {
+        margin-top: 520px;
+        margin-left: 80px;
+        padding-left: 20px;
+        padding: 10px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend2:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend3:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend4:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend5:hover {
+        background-color: #ffcf3e;
+    }
+</style>
+{% endblock %}

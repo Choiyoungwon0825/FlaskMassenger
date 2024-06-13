@@ -1,0 +1,308 @@
+{% extends "base.html" %}
+{% block title %}PINEAPPLE Friends{% endblock %}
+{% block content %}
+<div class="moveLink">
+    <div class="menu">
+        <p style="margin-top: 50px;">
+            <a href="/friends" style="color: #ffc107;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-person-fill " viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </a>
+        </p>
+        <p><a href="/chats">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor"
+                    class="bi bi-chat-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                </svg>
+            </a></p>
+    </div>
+
+    <div class="head">
+        <p><b style="font-size: 30px; margin-left: 20px; color: #ffc107;">친구</b></p>
+        <div style="margin-left: auto;">
+            <img src="../static/app.png" style="width: 100px; height: 100px;"><b
+                style="font-size: 30px; color: #ffc107">PINEAPPLE
+                TALK</b>
+        </div>
+        <div class="btnGroup">
+            <button type="button" class="btn btn-outline-warning headBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-outline-warning headBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                    <path
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path
+                        d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4" />
+                </svg>
+            </button>
+
+        </div>
+
+
+    </div>
+    <div class="me">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플</b>
+            </span>
+            <br />
+            <span style="color: gray;">
+                파인애플 데워먹으면 맛없음
+            </span>
+        </div>
+    </div>
+    <div class="peoples">
+        친구 5
+    </div>
+    <div class="friend">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구1</b>
+            </span>
+            <br />
+            <span style="color: gray;">
+                하와이안 피자 맛없음
+            </span>
+        </div>
+    </div>
+    <div class="friend2">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구2</b>
+            </span>
+            <br />
+            <span style="color: gray;">
+                사과랑 펜이랑 합쳐봐
+            </span>
+        </div>
+    </div>
+    <div class="friend3">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구3</b>
+            </span>
+            <br />
+            <span style="color: gray;">
+                게임 같이 하실분
+            </span>
+        </div>
+    </div>
+    <div class="friend4">
+        <div>
+            <img src="../static/app.png" style="width: 70px; height: 70px;">
+        </div>
+        <div>
+            <span>
+                <b>파인애플 친구4</b>
+            </span>
+            <br />
+            <span style="color: gray;">
+                아 너무 달다
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .moveLink {
+        display: flex;
+        height: 100vh;
+    }
+
+    .menu {
+        text-align: center;
+        padding-top: 80px;
+
+        min-width: 80px;
+        height: 100%;
+        background-color: green;
+    }
+
+    .head {
+        height: 10%;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+
+    }
+
+    .headBtn {
+        border-radius: 100%;
+        border: none;
+        width: 64px;
+        height: 64px;
+    }
+
+    .btnGroup {
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    a {
+        color: #b9a15a;
+    }
+
+    a:hover {
+        color: #d0a72a;
+    }
+
+    .me {
+        padding-top: 120px;
+        margin-left: 80px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid green;
+        z-index: 1;
+
+    }
+
+    .peoples {
+        padding-top: 220px;
+        margin-left: 85px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 30px;
+
+        z-index: 3;
+
+    }
+
+    .me:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend {
+        margin-top: 260px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+
+    .friend2 {
+        margin-top: 350px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend3 {
+        margin-top: 450px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend4 {
+        margin-top: 550px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend5 {
+        margin-top: 650px;
+        margin-left: 80px;
+        padding-left: 20px;
+        padding: 10px;
+        z-index: 10;
+        position: absolute;
+        width: 95.2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .friend:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend2:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend3:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend4:hover {
+        background-color: #ffcf3e;
+    }
+
+    .friend5:hover {
+        background-color: #ffcf3e;
+    }
+</style>
+{% endblock %}

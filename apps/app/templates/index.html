@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Talk Login{% endblock %}
+{% block content %}
+<div class="imgArea">
+    <img src="../static/app.png" alt="사진들어갈곳" style="width: 160px; height: 160px;" />
+    <p style="font-size: 30px; color: #ffc107;">PINEAPPLE TALK</p>
+</div>
+<div class="loginForm">
+    <div class="form-floating mb-3 loginInput" style="margin-top: 30px;">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email or Phone</label>
+    </div>
+    <div class="form-floating loginInput">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <button type="button" class="btn btn-warning loginBtn" style="color: green;">Warning</button>
+    <div class ="loginService">
+        <p style="margin: auto;">
+            <a href="/" style="margin-right: 15px;">계정 찾기</a>
+            <a href="/">비밀번호 찾기</a>
+        </p>
+        <p>
+            <a href="/friends">chat</a>
+        </p>
+    </div>
+</div>
+<style>
+    body {
+        text-align: center;
+    }
+    
+
+</style>
+{% endblock %}
